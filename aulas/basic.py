@@ -57,7 +57,15 @@
 
 # print(nota_final)
 
-nome = input ('Digite o nome: ')
-sobrenome = input ('Digite o sobrenome: ')
+# nome = input ('Digite o nome: ')
+# sobrenome = input ('Digite o sobrenome: ')
 
-print(f' O nome é: {nome} e o sobrenome é: {sobrenome}
+# print(f' O nome é: {nome} e o sobrenome é: {sobrenome}
+
+# var1 = 10
+# var2 = 50
+
+# print(var1 <= var2)
+
+lista = ['a', 'b, 'c', 'd']
+print(lista)
