@@ -60,4 +60,4 @@
 nome = input ('Digite o nome: ')
 sobrenome = input ('Digite o sobrenome: ')
 
-print(f' O nome é: {nome} e o sobrenome é: {sobrenome}')
+print(f' O nome é: {nome} e o sobrenome é: {sobrenome}
