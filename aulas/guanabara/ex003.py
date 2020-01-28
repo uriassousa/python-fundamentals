@@ -1,3 +1,3 @@
-nome = input('Entre com seu nome: ')
+nome = input('Entre com seu nome ')
 
-print('É um prazet te conhecer, ' nome)
+print('Prazer em conhece {}!'.format(nome))
