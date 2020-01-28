@@ -1,0 +1,32 @@
+Examples 1
+
+https://stackabuse.com/creating-and-deleting-directories-with-python/
+
+Required Python Modules
+Reading and writing files does not require loading an additional module, but accessing the file system functions (like handling directories) requires that we use a separate module. First, the os module has to be loaded. os is a Python module which belongs to the core part of the Python ecosystem. It is done using an import statement as follows:
+
+import os
+The os module contains most of the methods we'll need throughout this article. However, as you'll see later on, if you want to something more advanced, like create a temporary file for storing data, then we'll also be needing the tempfile module.
+
+Detecting the Current Working Directory
+Before we get in to creating/removing directories, let's see how to perform some other basic directory operations, like detecting the current working directory using the method getcwd(). This method will return a string containing the path of your working directory. Listing 1 shows how to integrate this method in a Python script.
+
+Detecting the Current Working Directory
+Before we get in to creating/removing directories, let's see how to perform some other basic directory operations, like detecting the current working directory using the method getcwd(). This method will return a string containing the path of your working directory. Listing 1 shows how to integrate this method in a Python script.
+
+# import the os module
+import os
+
+# detect the current working directory and print it
+path = os.getcwd()
+print ("The current working directory is %s" % path)
+
+The output should look something like this:
+
+$ python3 cwd.py
+The current working directory is /home/frank/
+Furthermore, the os module contains the additional getcwdb() method. This one is similar to the getcwd() method but returns the path as a binary string, instead.
+
+There are quite a few other directory operations not covered in this article, like checking if a file or directory exists. But for now we'll move on to the main purpose of this article.
+
+J3tS0ft@2021

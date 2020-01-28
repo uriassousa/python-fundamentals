@@ -67,5 +67,27 @@
 
 # print(var1 <= var2)
 
-lista = ['a', 'b, 'c', 'd']
-print(lista)
+#lista = ['a', 'b, 'c', 'd']
+#print(lista)
+
+#n1 = int(input("Digite um número: "))
+#n2 = int(input("Digite um outro numero: "))
+
+#print(n2 * n2)
+
+#nota1 = float(input('Digite a nota de Matemática: '))
+#nota2 = float(input('Digite a nota de Português: '))
+#nota3 = float(input('Digite a nota de Física: '))
+#nota4 = float(input('Digite a nota de História: '))
+
+#media = ((nota1 + nota2 + nota3 + nota3) / 4)
+
+#print(media)
+
+#nome = input('Digite seu nome: ')
+
+#print('É um prazer te conhecer, {}!'.format(nome))
+
+#n = str(input('Digite um valor: '))
+#print(type(n))
+

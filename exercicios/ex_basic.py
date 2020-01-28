@@ -27,4 +27,7 @@ lista = ['Corinthians', [1, 2, 3, 4, 5] ,'Palmeiras', 'São Paulo', [10, 11, 12,
 
 # print(lista[0])
 
-lista.append
+# lista.append
+
+nome = "Urias Sousa"
+print(nome)
