@@ -63,8 +63,12 @@
 # except NameError as n:
 #     print(n)
 #with open('arquivo.txt', 'r') as f:
-with open('arquivo.txt', 'r') as f:
-    print(f.read())
+# with open('arquivo.txt', 'r') as f:
+#     print(f.read())
     #f.seek(10)
     #f.write('Novo arquivo txt  \n Teste \n teste2 \n teste3 \n para adicao de conteudo relacionando ao curso de python. OK ok?')
 
+try:
+    with open('arquivo.txt', 'r') as f:
+        prin(f.read)
+        
