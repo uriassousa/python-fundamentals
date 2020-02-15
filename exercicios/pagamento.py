@@ -47,4 +47,4 @@ salario_liquido = salario_bruto - total_desconto
 
 print('Salario Bruto: ({} * {}): {}'.format(vlr_hora, qtd_hora, salario_bruto))
 print('(-) IR {}%: {}'.format(ir, valorIR))
-print('(- S) Sindicateo (3$: R${}'format(valFGTS, ))
+print('(- S) Sindicateo (3$: R${}'format(valorFGTS, ))
