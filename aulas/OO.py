@@ -36,22 +36,38 @@
 
 # print(servidorWeb.memoria)
 
-class Servidor(): 
-    teste = 'teste01'
+# class Servidor(): 
+#     teste = 'teste01'
 
-    def __init__(self):
-        self.servico = None
-        self.disco = 150
-        self.processador = 'Intel Xeon'
-        self.memoria = 16
+#     def __init__(self):
+#         self.servico = None
+#         self.disco = 150
+#         self.processador = 'Intel Xeon'
+#         self.memoria = 16
 
-class servidorWeb(Servidor):
+# class servidorWeb(Servidor):
 
-    def __init__(self):
-        super().__init__()
-        self.servico = 'Nginx'
+#     def __init__(self):
+#         super().__init__()
+#         self.servico = 'Nginx'
 
-Vader = servidorWeb()
+# Vader = servidorWeb()
 
-print(Vader.memoria)
+# print(Vader.disco)
 
+# class Servidor():
+
+#     def __init__(self):
+#         self.disco = 150
+#         self.processador = 'Xeon'
+#         self.memoria = 16
+
+
+# class ServidorWeb(Servidor):
+
+#     def __init__(self):
+#         super().
+
+import os
+
+print(os.name)
