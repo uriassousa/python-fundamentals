@@ -1,0 +1,21 @@
+> db.fila.remove({"empres": "gatornet"})
+WriteResult({ "nRemoved" : 1 })
+> db.fila.find()
+{ "_id" : 1, "servico" : "intranet", "status" : 0 }
+{ "_id" : ObjectId("5e4844c19d0fa252f5e42f42"), "empresanet" : "TV Gato Net", "status" : 3 }
+{ "_id" : ObjectId("5e4844d29d0fa252f5e42f43"), "NetS" : "TV Gato Net", "status" : 4 }
+{ "_id" : ObjectId("5e4846629d0fa252f5e42f44"), "empresa" : "coronaLoja", "produtos" : [ { "nome" : "CoronaCamiseta", "preco" : 19.9 }, { "nome" : "CoronaCalca", "preco" : 159.9 } ] }
+> db.fila.remove({"NetS": "status"})
+WriteResult({ "nRemoved" : 0 })
+> db.fila.find()
+{ "_id" : 1, "servico" : "intranet", "status" : 0 }
+{ "_id" : ObjectId("5e4844c19d0fa252f5e42f42"), "empresanet" : "TV Gato Net", "status" : 3 }
+{ "_id" : ObjectId("5e4844d29d0fa252f5e42f43"), "NetS" : "TV Gato Net", "status" : 4 }
+{ "_id" : ObjectId("5e4846629d0fa252f5e42f44"), "empresa" : "coronaLoja", "produtos" : [ { "nome" : "CoronaCamiseta", "preco" : 19.9 }, { "nome" : "CoronaCalca", "preco" : 159.9 } ] }
+> db.fila.remove({"NetS": "TV Gato Net"})
+WriteResult({ "nRemoved" : 1 })
+> db.fila.find()
+{ "_id" : 1, "servico" : "intranet", "status" : 0 }
+{ "_id" : ObjectId("5e4844c19d0fa252f5e42f42"), "empresanet" : "TV Gato Net", "status" : 3 }
+{ "_id" : ObjectId("5e4846629d0fa252f5e42f44"), "empresa" : "coronaLoja", "produtos" : [ { "nome" : "CoronaCamiseta", "preco" : 19.9 }, { "nome" : "CoronaCalca", "preco" : 159.9 } ] }
+> 
