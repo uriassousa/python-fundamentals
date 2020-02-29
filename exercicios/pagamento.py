@@ -32,19 +32,23 @@ if salario_bruto >= 4600:
     ir = 27
 elif salario_bruto > 3700 and salario_bruto < 4600:
     ir = 22
-elif salario_bruto > 2800 and salario_bruto < 3700
+elif salario_bruto > 2800 and salario_bruto < 3700:
     ir = 15
-elif salario_bruto > 1900 and salario_bruto <= 2800
+elif salario_bruto > 1900 and salario_bruto <= 2800:
     ir = 7
 else:
     ir = 0
 
-valorIR = salario_bruto * (ir / 100.0)
-valor_sindicato = salario_bruto * (3 / 100.0)
-valorFGTS = salario_bruto * (11 / 100.0
+valorIR = salario_bruto * (ir / 100)
+valor_sindicato = salario_bruto * (3 / 100)
+valorFGTS = salario_bruto * (11 / 100
 total_desconto = valorIR + valor_sindicato
 salario_liquido = salario_bruto - total_desconto
 
 print('Salario Bruto: ({} * {}): {}'.format(vlr_hora, qtd_hora, salario_bruto))
 print('(-) IR {}%: {}'.format(ir, valorIR))
+<<<<<<< HEAD
+print('(- S) Sindicateo (3$: R${}'format(valorFGTS ))
+=======
 print('(- S) Sindicateo (3$: R${}'format(valorFGTS, ))
+>>>>>>> ec82fde7c44d5379f931dc5d0faa82bcf50068e0
