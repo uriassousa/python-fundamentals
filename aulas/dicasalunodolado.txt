@@ -1,0 +1,291 @@
+https://paulovasconcellos.com.br/?gi=73f0ac131cd0
+https://medium.com/tableless/voc%C3%AA-conhece-o-google-hacking-d8f5c3296a3f
+
+https://university.mongodb.com/
+
+
+Frameworks
+Web2py
+
+# Algoritmos diversos da linguagem ptyhon - para compreender como funciona
+https://github.com/TheAlgorithms/Python
+
+# plataforma de desafios e processos seletivos
+https://codenation.dev/
+
+https://we.tl/t-nj87oRbEil
+
+
+dataset
+https://we.tl/t-LYpZjoPRYu
+
+list1 = ['physics', 'Biology', 'chemistry', 'maths']
+list1.sort()
+print ("list now : ", list1)
+
+
+
+usuarios = ['Caio', 'Felipe', 'Manuela', 'Paula', 'Daniel', 'Camila']
+
+while True:
+    try:
+        user=(input('Digite o Nome de Usuario:'))
+        if user in usuarios:
+            print('Acesso permitido!')
+            break
+        else:
+            print('O usuário {} não tem acesso!'.format(user))
+            raise Exception('Acesso Negado!')            
+    except Exception as e:
+        print(e)   
+        continue
+
+
+
+with open('arquivo.txt','w') as f:
+    f.write('Novo arquivo txt')
+
+
+with open('arquivo.txt','r') as f:
+    print(f.read())
+    f.seek(0)  # volta para primeira linha
+    print(f.read())
+    f.close()
+
+with open('arquivo.txt', 'w') as f:
+    f.seek(10)
+    f.write('Novo arquivo txt para adicao de conteudo relacionando ao curso de python. OK ok?')
+
+
+
+--Usando Pandas
+import pandas as pd
+df = pd.read_csv('/home/developer/pythonfundamentals2/Aulas/dados/campeonato-brasileiro-full.csv', encoding='utf-8', sep=',',header=0, usecols=['Data'],['Clube 1'],['Clube 2'],['Vencedor'])
+df 
+df.shape
+df.head(3)
+df2 = df
+df2.drop('Horário', axis=1)
+df2.drop([0,15]) #remover linhas pelo index
+
+
+
+--Usando Funções
+def soma(x,y):
+    return x + y
+
+print(soma(10,20))
+
+
+def soma(n1,n2):
+    if n1 > n2:
+        print(n1)
+    else:
+        print(n2)
+        
+soma(10,20)
+
+
+n1 = int(input('Digite o valor de n1:'))
+n2 = int(input('Digite o valor de n2:'))
+
+def maior(n1,n2):
+    if n1 > n2:
+        print(n1)
+    else:
+        print(n2)
+
+maior(n1,n2)
+
+#Convert para uma tupla
+def maior(*valores):
+    return(max(valores))
+print(maior(1,2,3,45,6,7,89,0,-0,-3,3,56,7,7,12243))
+
+
+--O sorte converte para uma lista
+ #Convert para uma tupla
+def ordem(*valores):
+    return(sorted(valores))
+print(ordem(1,2,3,45,6,7,89,0,-0,-3,3,56,7,7,12243))
+
+
+#Retorna um dicionário
+import requests
+
+def api(**valores):
+    req = requests.get(valores['URL'])
+    print(valores)
+    return req
+
+print(api(URL='http://www.google.com.br',code_status='valor esperado 2000', retorno ='0k')) 
+
+
+#Função anonima
+# def sub(x,y):
+#     return x -y
+#chamar função sub(10,5)
+
+
+sub2 = lambda x,y: x-y
+sub2 (10,3)
+
+
+#Map verifica linha por linha da lista
+lista = [1,2,3,4,56,7,8,9]
+dobro = list(map(lambda x: x*2, lista))
+print(dobro)
+ 
+#Filter 
+lista = [1,2,3,4,5,6,78,9,9,0,12,334,565667,8,99,]
+n_par = list(filter(lambda x: x %2 == 0, lista))
+print(n_par)
+
+
+
+#Programação Orientada a Objetos
+class Passaro():
+
+    def __init__(self):
+        self.asas = 2
+        self.bico = True
+        self.penas = True
+
+    def voar(self):
+        print('Voando...')
+
+    def pousar(self):
+        print('Pousando...')
+
+    def dormir(self):
+        print('Dormindo...')
+
+sabiá = Passaro()
+
+
+sabiá.voar()
+sabiá.pousar()
+sabiá.dormir()
+print(sabiá.bico)
+
+https://pypi.org/
+
+
+
+
+
+
+class Servidor():
+    valor = None    
+    def __init__(self, servico, disco, processador, memoria):
+        self.servico = servico
+        self.disco = disco
+        self.processador = processador
+        self.memoria = memoria
+
+    def addMemoria(self, addM):
+        self.memoria += addM
+
+    def addArmazenamento(self, addD):
+       self.disco += addD
+
+    def mudaServico(self, new_service):
+        self.servico = new_service
+
+# servidorWeb = servidor('Nginx', 250, 'I7 9 Geracao', 16)
+
+servidorWeb.addMemoria(8)
+servidorWeb.addArmazenamento(128)
+servidorWeb.mudaServico('IIS')
+
+print(servidorWeb.memoria)
+
+
+
+
+====Pstgresql
+postgres@developer:~$ plsql -h localhost -U admin projeto
+
+postgres=# create user admin password '4linux';
+CREATE ROLE
+
+postgres=# create database projeto owner admin;
+CREATE DATABASE
+
+
+postgres@developer:~$ psql -h localhost -U admin projeto
+Senha para usuário admin: 
+
+projeto=> create table s(id SERIAL, nome varchar(50),conteudo TEXT);
+CREATE TABLE
+
+projeto-> \dt
+
+projeto=> truncate s;
+TRUNCATE TABLE
+
+
+===Mysql
+systemctl start mysql
+root@developer:~# mysql -u root -p
+
+
+====Conexão com banco
+#!/usr/bin/python3
+
+# import psycopg2
+
+# try:
+#     con = psycopg2._connect("host=localhost \
+#                             dbname=projeto \
+#                             user=admin      \
+#                             password=4linux ")
+
+#     cur = con.cursor()
+#     cur.execute("insert into s(nome,conteudo) values('TesteTRY.py','Teste de tratamento de exceções')")
+#     con.commit()
+
+
+# except Exception as  e:
+#     print('Erro: {}'.format((e)))
+#     print('Fazendo rollback')
+#     con.rollback()
+
+# finally:
+#     print('Finalizando conexão com banco de dados')
+#     cur.close()
+#     con.close()
+
+#===========================================================================
+
+from pymongo import MongoClient
+
+client = MongoClient('127.0.0.1')
+db = client['dexterops']
+
+def inserir_dados():
+    try:
+        db.fila.insert({"_id":3,"empresa":"4linux","cursos":[{"nome":"Python Fundamentals",
+                                                             "carga horaria":40},
+                                                            {"nome":"Linux Funamentals",
+                                                             "carga horaria":40}]})
+    except Exception as e:
+        print('Error: {}'.format(e))
+
+
+
+
+
+def buscar_dados():
+    for r in db.fila.find():
+        print('Empresa'.format(r['empresa']))
+        for c in r['cursos']:
+            print(20*'=')
+            print('Nome: {} \n Carga Horaria: {}'.format(c['nome'],c['carga horaria']))
+
+buscar_dados()
+
+def adicionar_sub():
+    db.fila.update({"_id":1},{'instrutores':{'nome':'Maria'}})
+dic = {'chave':'valor','chave2':[{'chave3':'valor3'},{'chave4':'valor4'}]}
+print(dic['chave2'][0])
