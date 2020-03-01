@@ -1,0 +1,5 @@
+ . venv/bin/activate
+
+ ou 
+
+ developer@developer:~/python-fundamentals$ . venv/bin/activate

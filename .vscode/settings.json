@@ -1,5 +1,13 @@
 {
+<<<<<<< HEAD:.vscode/settings.json
     "python.pythonPath": "/usr/local/bin/python3",
+=======
+<<<<<<< HEAD
+    "python.pythonPath": "/usr/bin/python3",
+=======
+    "python.pythonPath": "C:\\Users\\urias\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+>>>>>>> 3e46bb815e3f7000058f45f3d95eca113f9e11f2
+>>>>>>> 33d577f7a60fcdd4b2c8b9abd715c738640a6ce2:.vscode/settings.json.old
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }
